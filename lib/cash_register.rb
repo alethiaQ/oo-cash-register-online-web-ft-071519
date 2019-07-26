@@ -1,5 +1,5 @@
 class CashRegister
-  attr_accessor :last_trans
+  attr_accessor :last_trans, :total
   attr_reader :discount
   @@all_items = []
 
@@ -8,9 +8,7 @@ class CashRegister
     @discount = discount
   end
 
-  def total
-    @total
-  end
+
 
   def add_item(item, price, quan=1)
     @@all_items << item
