@@ -1,5 +1,6 @@
 class CashRegister
   attr_accessor :last_trans
+  attr_reader :discount
   @all_items = []
 
   def initialize(discount=0)
@@ -23,6 +24,7 @@ class CashRegister
     amount = (@discount.to_f / 100) * self.total
     self.total -= amount
     puts "After the discount, the total comes out to $#{self.total}."
+    return @total
   else
     puts "There is no discount to apply."
   end
