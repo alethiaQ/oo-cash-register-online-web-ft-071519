@@ -24,7 +24,7 @@ class CashRegister
     puts "After the discount, the total comes out to $#{self.total}."
     return @total
   else
-    puts "There is no discount to apply."
+    return "There is no discount to apply."
   end
 end
 
