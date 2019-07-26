@@ -36,6 +36,10 @@ end
     @items
   end
 
+  def items=(list_items)
+    @items = list_items
+  end 
+
   def void_last_transaction
     self.total -= self.last_trans
   end
