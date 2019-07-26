@@ -21,7 +21,7 @@ class CashRegister
     if @discount > 0
     amount = (@discount.to_f / 100) * self.total
     self.total -= amount
-    return "After the discount, the total comes out to $#{@total}."
+    return "After the discount, the total comes to $#{@total}."
 
   else
     return "There is no discount to apply."
