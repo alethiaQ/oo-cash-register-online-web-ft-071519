@@ -16,7 +16,7 @@ class CashRegister
     self.last_trans = @price
     self.total += @price
     quan.times do
-      items << title
+      items << item
     end
 
   end
@@ -33,7 +33,7 @@ class CashRegister
 end
 
   def items
-    @@all_items
+    @items
   end
 
   def void_last_transaction
